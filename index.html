@@ -61,11 +61,6 @@
 	</head>
 	<body class="bg">
 		<script>
-			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="جاري تحميل الصفحة الرجاء الانتظار"};
-			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML="Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed"};
-			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="تم تحميل الصفحة بنجاح";setTimeout(function(){document.getElementById("progress").innerHTML="قم بايقاف الانترنت والدخول مره اخرى الى المتصفح"; }, 1500);};
-		</script>
-		<script>
 			function load_PS4Debug(){
 				progress.innerHTML="Payload Sending... Please Wait !!";
 				PLfile = "payloads/ps4debug.bin";
